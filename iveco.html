@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iveco Daily Stockholm | Van & Fastlane | Kihlströms</title>
+    <meta name="description" content="Köp Iveco Daily hos Kihlströms. Välj mellan smidiga Daily Van 12m3 eller leveransklara Daily Fastlane med skåp och bakgavellyft.">
+    <meta name="keywords" content="Iveco Daily Stockholm, Iveco Daily Fastlane, Skåpbil bakgavellyft, Iveco Van 12m3, Transportbil B-körkort">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-hero { background: linear-gradient(135deg, #1e3a8a 0%, #172554 100%); }
+        .section-fade { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+        .section-fade.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <!-- Navigation (Same as index) -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">K</span>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold text-slate-900 leading-tight">Kihlströms</h1>
+                        <p class="text-xs text-slate-500">Transport & Lastbilscenter</p>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#fordon" class="text-slate-600 hover:text-blue-600 font-medium transition">Fordon</a>
+                    <a href="iveco.html" class="text-blue-600 font-semibold transition">Iveco</a>
+                    <a href="isuzu.html" class="text-slate-600 hover:text-blue-600 font-medium transition">Isuzu</a>
+                    <a href="index.html#kontakt" class="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-blue-700 transition">Kontakta oss</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-hero min-h-[50vh] flex items-center pt-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                    Iveco Daily
+                </h1>
+                <p class="text-2xl text-blue-100 mb-8 leading-relaxed">
+                    En modell. Oändliga möjligheter. Från smidig skåpbil till komplett lastbil.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#van" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">Daily Van 12m³</a>
+                    <a href="#fastlane" class="border border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition">Daily Fastlane</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Daily Van Section -->
+    <section id="van" class="py-20 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="section-fade order-2 lg:order-1">
+                     <div class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold mb-4">Stadsdistribution</div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Iveco Daily Van 12m³ – Smidigast i Stan</h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        Maximal volym med personbilskänsla. Den unika bakhjulsdriften och marknadens snävaste vändradie gör den överlägsen i Stockholms trånga gränder.
+                    </p>
+                    <h3 class="font-bold text-slate-900 mb-3">Varför Daily Van?</h3>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex gap-3"><span class="text-blue-600 font-bold">✓</span> <span><strong>Hi-Matic:</strong> 8-stegs automatlåda för silkeslen körning.</span></li>
+                        <li class="flex gap-3"><span class="text-blue-600 font-bold">✓</span> <span><strong>Volym:</strong> 12m³ som är lätt att lasta (högt i tak).</span></li>
+                        <li class="flex gap-3"><span class="text-blue-600 font-bold">✓</span> <span><strong>Scenario Bud:</strong> Perfekt för e-handel och "last-mile" med många stopp.</span></li>
+                    </ul>
+                    <a href="index.html#kontakt" class="text-blue-600 font-bold hover:underline">Begär offert på Daily Van →</a>
+                </div>
+                <div class="bg-slate-100 h-80 rounded-3xl flex items-center justify-center section-fade order-1 lg:order-2">
+                    <span class="text-slate-400 font-bold">Bild: Daily Van 12m³</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fastlane Section -->
+    <section id="fastlane" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                 <div class="bg-slate-200 h-80 rounded-3xl flex items-center justify-center section-fade">
+                    <span class="text-slate-400 font-bold">Bild: Daily Fastlane (Skåp+Lift)</span>
+                </div>
+                <div class="section-fade">
+                    <div class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold mb-4">Leveransklar</div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Iveco Daily Fastlane – Redo för Jobbet</h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        Ingen väntan på påbyggare. Fastlane är ett nyckelfärdigt koncept: Chassi med färdigt volymskåp och bakgavellyft (Zepro). Hämta bilen och börja köra direkt.
+                    </p>
+                     <h3 class="font-bold text-slate-900 mb-3">Varför Fastlane?</h3>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex gap-3"><span class="text-green-600 font-bold">✓</span> <span><strong>Ingen väntetid:</strong> Lagerbilar redo för omgående leverans.</span></li>
+                        <li class="flex gap-3"><span class="text-green-600 font-bold">✓</span> <span><strong>Bakgavellyft:</strong> 750kg Zepro-lift ingår som standard.</span></li>
+                        <li class="flex gap-3"><span class="text-green-600 font-bold">✓</span> <span><strong>Lastvikt:</strong> Optimerad för ca 1000kg last på B-körkort.</span></li>
+                         <li class="flex gap-3"><span class="text-green-600 font-bold">✓</span> <span><strong>Scenario Flytt:</strong> Plant golv och lift gör den idealisk för möbler och tunga gods.</span></li>
+                    </ul>
+                    <a href="index.html#kontakt" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-700 transition">Offert på Fastlane</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        });
+        document.querySelectorAll('.section-fade').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
