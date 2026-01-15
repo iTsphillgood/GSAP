@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVECO Driver Pal - Kihlströms Transport & Lastbilscenter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        body { font-family: 'Roboto', sans-serif; }
+        .iveco-blue { color: #0066cc; }
+        .iveco-bg-blue { background-color: #0066cc; }
+        .sidebar-link:hover { color: #0066cc; border-left: 3px solid #0066cc; padding-left: 12px; }
+        .sidebar-link { transition: all 0.2s; border-left: 3px solid transparent; padding-left: 15px; }
+        .active-link { color: #0066cc; border-left: 3px solid #0066cc; padding-left: 12px; font-weight: bold; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Top Bar -->
+    <div class="bg-white border-b border-gray-200">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center text-sm">
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-blue-600">Stockholm Syd (Smista/Segeltorp)</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">Stockholm Norr (Spånga)</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-blue-600">Kontakta oss</a>
+                <a href="#" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">Boka Provkörning</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://www.iveco-dealership.co.uk/assets/images/common/iveco-rgb-01.svg" alt="IVECO" class="h-8 mr-4">
+                <span class="text-xl font-bold text-gray-700 hidden md:block">Kihlströms Transport & Lastbilscenter</span>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Nya Fordon</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Begagnat</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Tjänster</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Reservdelar</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Om Oss</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-blue-600"><i class="fas fa-bars fa-lg"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-3 border-b">
+        <div class="container mx-auto px-4 text-sm text-gray-500">
+            <a href="#" class="hover:underline">Hem</a> /
+            <a href="#" class="hover:underline">Tjänster</a> /
+            <span class="text-gray-700 font-semibold">IVECO Driver Pal</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="relative bg-gray-900 text-white h-64 md:h-80 flex items-center overflow-hidden">
+        <img src="https://www.iveco-dealership.co.uk/uploads/files/banners/updated/iveco-driver-pal-desktop.jpg" alt="IVECO Driver Pal" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="container mx-auto px-4 relative z-10">
+            <h1 class="text-3xl md:text-5xl font-bold mb-2">IVECO Driver Pal</h1>
+            <p class="text-lg md:text-xl font-light">Den röststyrda förarkompisen</p>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+
+        <!-- Sidebar -->
+        <aside class="w-full md:w-1/4">
+            <div class="bg-white rounded shadow-sm p-4 sticky top-24">
+                <h3 class="text-lg font-bold mb-4 border-b pb-2">Tjänster</h3>
+                <ul class="space-y-2">
+                    <li><a href="iveco-on-fleet.html" class="sidebar-link block py-2 text-gray-600 hover:bg-gray-50">IVECO ON Fleet</a></li>
+                    <li><a href="iveco-on-uptime.html" class="sidebar-link block py-2 text-gray-600 hover:bg-gray-50">IVECO ON Uptime</a></li>
+                    <li><a href="iveco-driver-pal.html" class="active-link block py-2 text-gray-600 hover:bg-gray-50">IVECO Driver Pal</a></li>
+                    <li><a href="iveco-on-care.html" class="sidebar-link block py-2 text-gray-600 hover:bg-gray-50">IVECO ON Care</a></li>
+                    <li><a href="iveco-on-maintenance-and-repair.html" class="sidebar-link block py-2 text-gray-600 hover:bg-gray-50">Underhåll och Reparation</a></li>
+                    <li><a href="smart-pack-and-premium-pack.html" class="sidebar-link block py-2 text-gray-600 hover:bg-gray-50">Smart Pack & Premium Pack</a></li>
+                </ul>
+
+                <div class="mt-8 bg-blue-50 p-4 rounded border border-blue-100">
+                    <h4 class="font-bold text-blue-800 mb-2">Kontakta oss</h4>
+                    <p class="text-sm text-gray-600 mb-4">Har du frågor om våra tjänster?</p>
+                    <form>
+                        <input type="text" placeholder="Namn" class="w-full mb-2 p-2 border rounded text-sm">
+                        <input type="email" placeholder="E-post" class="w-full mb-2 p-2 border rounded text-sm">
+                        <button class="w-full bg-blue-600 text-white py-2 rounded text-sm font-bold hover:bg-blue-700">Skicka förfrågan</button>
+                    </form>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Content -->
+        <main class="w-full md:w-3/4">
+            <div class="bg-white p-6 md:p-8 rounded shadow-sm mb-8">
+
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">Den röststyrda förarkompisen</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Nya IVECO DRIVER PAL tar förarens liv till nästa nivå genom att förvandla fordonet till den perfekta resekompisen.
+                    Som en del av IVECOs kundcentrerade ständiga förbättringsprocess har IVECO DRIVER PAL berikats med nya funktioner som gör förarens liv ännu enklare, mer produktivt och säkrare.
+                </p>
+
+                <div class="mb-8">
+                    <img src="https://www.iveco-dealership.co.uk/uploads/files/2023/driver-pal/iveco-driver-pal-key-features.jpg" alt="New Features" class="rounded shadow-md w-full">
+                </div>
+
+                <!-- Features Grid -->
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+
+                    <!-- Comfort -->
+                    <div>
+                        <img src="https://www.iveco-dealership.co.uk/uploads/files/2023/driver-pal/iveco-driver-pal-comfort.jpg" alt="Comfort" class="rounded shadow-md w-full mb-4">
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">KOMFORT</h3>
+                        <p class="text-gray-600">
+                            I den smarta hytten, med Alexa helt integrerad i fordonet, kan förare interagera med lastbilen och använda alla hyttkontroller enkelt med hjälp av rösten.
+                        </p>
+                    </div>
+
+                    <!-- Safety -->
+                    <div>
+                        <img src="https://www.iveco-dealership.co.uk/uploads/files/2023/driver-pal/iveco-driver-pal-key-safety.jpg" alt="Safety" class="rounded shadow-md w-full mb-4">
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">SÄKERHET</h3>
+                        <p class="text-gray-600">
+                            Med den röststyrda kompisen får förare en säkrare körupplevelse med färre distraktioner. Sekundära uppgifter sköts med rösten så att de kan behålla fokus på uppdraget.
+                        </p>
+                    </div>
+
+                    <!-- Productivity -->
+                    <div>
+                        <img src="https://www.iveco-dealership.co.uk/uploads/files/2023/driver-pal/iveco-driver-pal-productivity.jpg" alt="Productivity" class="rounded shadow-md w-full mb-4">
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">PRODUKTIVITET</h3>
+                        <p class="text-gray-600">
+                            Med den nya innovativa rösttjänsten kan förare röststyra sin ruttplanering, kontrollera fordonets hälsostatus och be om hjälp för att undvika oplanerade stopp, inklusive information om trafikstockningar och väderförhållanden.
+                        </p>
+                    </div>
+
+                    <!-- Community -->
+                    <div>
+                        <img src="https://www.iveco-dealership.co.uk/uploads/files/2023/driver-pal/iveco-driver-pal-community.jpg" alt="Community" class="rounded shadow-md w-full mb-4">
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">GEMENSKAP</h3>
+                        <p class="text-gray-600">
+                            Med IVECO DRIVER PAL är förare anslutna till förargemenskapen. De kan kommunicera säkert med andra förare, dela information och tips om sin rutt – och språket är inget hinder eftersom deras IVECO-kompis översätter åt dem.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Detailed Features Section -->
+                <div class="space-y-8">
+
+                    <div class="border-t pt-8">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">NY FORDONS LOKALISERING</h3>
+                        <p class="text-gray-600 mb-4">
+                            Den nya fordonslokaliseringsfunktionen sparar tid när du ska hitta var fordonet är parkerat.
+                            Föraren kan använda Driver Pal MYIVECO-skill i sin mobila enhet och fråga "Var är mitt fordon?" för att få adressen.
+                        </p>
+                    </div>
+
+                    <div class="border-t pt-8">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">ÖPPNA MYIVECO</h3>
+                        <p class="text-gray-600 mb-4">
+                            Det förbättrade röstkommandot "Öppna MYIVECO" fungerar nu som en rösthandledning för att hjälpa föraren att snabbt navigera bland de mest använda kommandona.
+                            När den väl är aktiverad förblir "Öppna MYIVECO"-skillen öppen, redo att svara på direkta förfrågningar som "Vad är fordonsstatusen?".
+                        </p>
+                    </div>
+
+                    <div class="border-t pt-8">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">MAXIMERA FORDONETS DRIFTSTID</h3>
+                        <p class="text-gray-600 mb-4">
+                            Nya funktioner inkluderar möjligheten att begära IVECOs Assistance Non-Stop-tjänst via röstkommandon och integration av push-meddelanden för underhållsinformation i realtid.
+                            Vid tekniska problem kan förare kontakta assistans med rösten istället för appen.
+                        </p>
+                    </div>
+
+                    <div class="border-t pt-8">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">HYTTKONTROLLER</h3>
+                        <p class="text-gray-600 mb-4">
+                            Ytterligare hyttkontroller kan aktiveras via röstkommandon, vilket ökar förarkomfort och säkerhet.
+                            Detta inkluderar att öppna/stänga fönster, kontrollera takluckan eller slå på/av infotainment-systemet när man vilar.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+             <!-- Brochures Section -->
+             <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-4 rounded shadow-sm flex items-center space-x-4 border border-gray-200">
+                    <img src="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/iveco-on-pdf.png" alt="Brochure Light" class="h-16">
+                    <div>
+                        <h4 class="font-bold text-gray-800">IVECO ON DAILY</h4>
+                        <a href="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/pdfs/UK-light.pdf" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">
+                            <i class="fas fa-file-pdf mr-1"></i> Ladda ner broschyr
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded shadow-sm flex items-center space-x-4 border border-gray-200">
+                    <img src="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/iveco-way-pdf.png" alt="Brochure Heavy" class="h-16">
+                    <div>
+                        <h4 class="font-bold text-gray-800">IVECO ON WAY RANGE</h4>
+                        <a href="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/pdfs/UK-heavy.pdf" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">
+                            <i class="fas fa-file-pdf mr-1"></i> Ladda ner broschyr
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-lg font-bold mb-4 border-b border-gray-600 pb-2">Kihlströms Transport & Lastbilscenter</h4>
+                <p class="text-gray-400 text-sm mb-2">Din partner för IVECO transportbilar och lastbilar.</p>
+                <div class="mt-4">
+                    <h5 class="font-bold text-gray-300">Stockholm Syd (Smista/Segeltorp)</h5>
+                    <p class="text-gray-400 text-sm">Smista Allé 15, 141 74 Segeltorp</p>
+                </div>
+                <div class="mt-4">
+                    <h5 class="font-bold text-gray-300">Stockholm Norr (Spånga)</h5>
+                    <p class="text-gray-400 text-sm">Fagerstagatan 5, 163 53 Spånga</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 border-b border-gray-600 pb-2">Snabblänkar</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">Nya fordon</a></li>
+                    <li><a href="#" class="hover:text-white">Begagnade fordon</a></li>
+                    <li><a href="#" class="hover:text-white">Service & Verkstad</a></li>
+                    <li><a href="#" class="hover:text-white">Reservdelar</a></li>
+                    <li><a href="#" class="hover:text-white">Kontakta oss</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 border-b border-gray-600 pb-2">Öppettider</h4>
+                <p class="text-gray-400 text-sm mb-2"><strong class="text-gray-300">Mån - Fre:</strong> 07:00 - 17:00</p>
+                <p class="text-gray-400 text-sm mb-2"><strong class="text-gray-300">Lör - Sön:</strong> Stängt</p>
+
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-8 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Kihlströms Transport & Lastbilscenter. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
