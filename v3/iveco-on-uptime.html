@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVECO ON Uptime - Kihlströms Transport & Lastbilscenter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        body { font-family: 'Roboto', sans-serif; }
+        .iveco-blue { color: #0066cc; }
+        .iveco-bg-blue { background-color: #0066cc; }
+        .sidebar-link:hover { color: #0066cc; border-left: 3px solid #0066cc; padding-left: 12px; }
+        .sidebar-link { transition: all 0.2s; border-left: 3px solid transparent; padding-left: 15px; }
+        .active-link { color: #0066cc; border-left: 3px solid #0066cc; padding-left: 12px; font-weight: bold; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Top Bar -->
+    <div class="bg-white border-b border-gray-200">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center text-sm">
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-blue-600">Stockholm Syd (Smista/Segeltorp)</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">Stockholm Norr (Spånga)</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-blue-600">Kontakta oss</a>
+                <a href="#" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">Boka Provkörning</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation (Simplified) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://www.iveco-dealership.co.uk/assets/images/common/iveco-rgb-01.svg" alt="IVECO" class="h-8 mr-4">
+                <span class="text-xl font-bold text-gray-700 hidden md:block">Kihlströms Transport & Lastbilscenter</span>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Nya Fordon</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Begagnat</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Tjänster</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Reservdelar</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Om Oss</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-blue-600"><i class="fas fa-bars fa-lg"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-3 border-b">
+        <div class="container mx-auto px-4 text-sm text-gray-500">
+            <a href="#" class="hover:underline">Hem</a> /
+            <a href="#" class="hover:underline">Tjänster</a> /
+            <span class="text-gray-700 font-semibold">IVECO ON Uptime</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="relative bg-gray-900 text-white h-64 md:h-80 flex items-center overflow-hidden">
+        <img src="https://www.iveco-dealership.co.uk/uploads/files/banners/updated/IVECO-ON-UPTIME_1440 x 400.jpg" alt="IVECO ON Uptime" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="container mx-auto px-4 relative z-10">
+            <h1 class="text-3xl md:text-5xl font-bold mb-2">IVECO ON Uptime</h1>
+            <p class="text-lg md:text-xl font-light">Fordonsövervakning | Fjärrassistans</p>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+
+        <!-- Sidebar -->
+        <aside class="w-full md:w-1/4">
+            <div class="bg-white rounded shadow-sm p-4 sticky top-24">
+                <h3 class="text-lg font-bold mb-4 border-b pb-2">Tjänster</h3>
+                <ul class="space-y-2">
+                    <li><a href="iveco-on-fleet.html" class="sidebar-link block py-2 text-gray-600 hover:bg-gray-50">IVECO ON Fleet</a></li>
+                    <li><a href="iveco-on-uptime.html" class="active-link block py-2 text-gray-600 hover:bg-gray-50">IVECO ON Uptime</a></li>
+                    <li><a href="iveco-driver-pal.html" class="sidebar-link block py-2 text-gray-600 hover:bg-gray-50">IVECO Driver Pal</a></li>
+                    <li><a href="iveco-on-care.html" class="sidebar-link block py-2 text-gray-600 hover:bg-gray-50">IVECO ON Care</a></li>
+                    <li><a href="iveco-on-maintenance-and-repair.html" class="sidebar-link block py-2 text-gray-600 hover:bg-gray-50">Underhåll och Reparation</a></li>
+                    <li><a href="smart-pack-and-premium-pack.html" class="sidebar-link block py-2 text-gray-600 hover:bg-gray-50">Smart Pack & Premium Pack</a></li>
+                </ul>
+
+                <div class="mt-8 bg-blue-50 p-4 rounded border border-blue-100">
+                    <h4 class="font-bold text-blue-800 mb-2">Kontakta oss</h4>
+                    <p class="text-sm text-gray-600 mb-4">Har du frågor om våra tjänster?</p>
+                    <form>
+                        <input type="text" placeholder="Namn" class="w-full mb-2 p-2 border rounded text-sm">
+                        <input type="email" placeholder="E-post" class="w-full mb-2 p-2 border rounded text-sm">
+                        <button class="w-full bg-blue-600 text-white py-2 rounded text-sm font-bold hover:bg-blue-700">Skicka förfrågan</button>
+                    </form>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Content -->
+        <main class="w-full md:w-3/4">
+            <div class="bg-white p-6 md:p-8 rounded shadow-sm mb-8">
+                <div class="flex justify-center mb-8">
+                    <img src="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/iveco-on-uptime.png" alt="IVECO ON Uptime Logo" class="h-16">
+                </div>
+
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">Håll din verksamhet i rörelse med IVECO ON Uptime</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Designad för att övervaka och optimera ditt fordons driftstid. Vår uppsättning tjänster finns tillgänglig för att stödja dig och ditt fordon när du stöter på problem. Dessutom säkerställer vårt kundcenter att du aldrig är ensam på din resa, med assistans när du behöver det som mest.
+                </p>
+
+                <!-- Section: IVECO TOP CARE -->
+                <div class="grid md:grid-cols-2 gap-8 mb-12 items-center">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">IVECO TOP CARE</h3>
+                        <p class="font-semibold text-gray-700 mb-2">Den garanterade prioritet du förtjänar</p>
+                        <p class="text-gray-600 mb-4">
+                            Premiumkunder kan dra nytta av IVECOs extra omsorgslösningar, som stöttar dig och ditt fordon inom sex timmar.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/IVECO-AMS-img-SWAY-13-Iveco-Top-Care.jpg" alt="IVECO TOP CARE" class="rounded shadow-md w-full">
+                    </div>
+                </div>
+
+                <!-- Section: VEHICLE MONITORING -->
+                <div class="grid md:grid-cols-2 gap-8 mb-12 items-center">
+                    <div class="order-last md:order-first">
+                        <img src="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/IVECO-AMS-img-SWAY-08-Control-Room.jpg" alt="Vehicle Monitoring" class="rounded shadow-md w-full">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">FORDONSÖVERVAKNING & FJÄRRASSISTANS</h3>
+                        <p class="font-semibold text-gray-700 mb-2">Vi ser efter dig och din flotta</p>
+                        <p class="text-gray-600 mb-4">
+                            IVECO möjliggör ett proaktivt tillvägagångssätt med maximerad driftstid genom fjärrdiagnostik, teletjänster och trådlösa mjukvaruuppdateringar (Over-The-Air).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section: ASSISTANCE NON STOP -->
+                <div class="grid md:grid-cols-2 gap-8 mb-12 items-center">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">ASSISTANCE NON STOP</h3>
+                        <p class="font-semibold text-gray-700 mb-2">Håller dig på vägen 24/7</p>
+                        <p class="text-gray-600 mb-4">
+                            Vi är stolta över det stöd vi kan erbjuda våra förare med vårt dygnet-runt-öppna kundcenter som erbjuder assistans i 36 europeiska länder.
+                        </p>
+                        <h4 class="font-bold mt-4 mb-2">INTERNATIONELL ASSISTANS FÖR DITT FORDON</h4>
+                        <p class="text-gray-600 mb-4">
+                            Känn fullständig sinnesro med vår internationella assistanstjänst. Omedelbar respons garanteras på 10 språk tack vare IVECOs team av 80 operatörer, där närmaste servicecenter aktiveras på ett ögonblick.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>Ring gratisnumret 0800 590 509 (UK) eller 00800 4832 6000 (Europa)</li>
+                            <li>Skicka din geolokalisering genom ett enkelt klick på fordonets system</li>
+                            <li>Använd IVECO Non Stop-appen</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/Assistance-Non-Stop-box1.jpg" alt="Assistance Non Stop" class="rounded shadow-md w-full">
+                    </div>
+                </div>
+
+                <!-- Section: IVECO NON STOP APP -->
+                <div class="bg-gray-50 p-6 rounded border border-gray-200 mb-8">
+                    <div class="flex flex-col md:flex-row items-center gap-6">
+                        <div class="w-full md:w-1/3">
+                            <img src="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/iveco-nonstop_1.jpg" alt="IVECO Non Stop App" class="rounded shadow w-full">
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <h3 class="text-xl font-bold mb-2 text-blue-700">IVECO NON STOP APP</h3>
+                            <p class="text-gray-600 mb-4">
+                                IVECO Non Stop-appen kan också användas för att boka reparationsarbete för ditt fordon – inte bara i nödfall. Välj tid och plats, så ger appen dig en bokningsbekräftelse.
+                            </p>
+                            <div class="flex gap-4">
+                                <a href="https://apps.apple.com/gb/app/iveco-non-stop/id1011108400" target="_blank">
+                                    <img src="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/app-store.png" alt="App Store" class="h-10">
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.IvecoAns24&hl=en" target="_blank">
+                                    <img src="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/play-store.png" alt="Google Play" class="h-10">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phone Numbers -->
+                <div class="bg-white p-6 rounded border border-gray-200">
+                    <h3 class="text-lg font-bold mb-4 text-gray-800">Viktiga Telefonnummer</h3>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <h4 class="font-bold text-blue-700">Assistance Non Stop</h4>
+                            <p class="text-2xl font-bold text-gray-800">00800 4832 6000</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-700">Nationella nummer (Sverige)</h4>
+                            <p class="text-gray-600">+46 40431325</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+             <!-- Brochures Section -->
+             <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-4 rounded shadow-sm flex items-center space-x-4 border border-gray-200">
+                    <img src="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/iveco-on-pdf.png" alt="Brochure Light" class="h-16">
+                    <div>
+                        <h4 class="font-bold text-gray-800">IVECO ON DAILY</h4>
+                        <a href="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/pdfs/UK-light.pdf" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">
+                            <i class="fas fa-file-pdf mr-1"></i> Ladda ner broschyr
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded shadow-sm flex items-center space-x-4 border border-gray-200">
+                    <img src="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/iveco-way-pdf.png" alt="Brochure Heavy" class="h-16">
+                    <div>
+                        <h4 class="font-bold text-gray-800">IVECO ON WAY RANGE</h4>
+                        <a href="https://www.iveco-dealership.co.uk/uploads/files/iveco-on/pdfs/UK-heavy.pdf" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">
+                            <i class="fas fa-file-pdf mr-1"></i> Ladda ner broschyr
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-lg font-bold mb-4 border-b border-gray-600 pb-2">Kihlströms Transport & Lastbilscenter</h4>
+                <p class="text-gray-400 text-sm mb-2">Din partner för IVECO transportbilar och lastbilar.</p>
+                <div class="mt-4">
+                    <h5 class="font-bold text-gray-300">Stockholm Syd (Smista/Segeltorp)</h5>
+                    <p class="text-gray-400 text-sm">Smista Allé 15, 141 74 Segeltorp</p>
+                </div>
+                <div class="mt-4">
+                    <h5 class="font-bold text-gray-300">Stockholm Norr (Spånga)</h5>
+                    <p class="text-gray-400 text-sm">Fagerstagatan 5, 163 53 Spånga</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 border-b border-gray-600 pb-2">Snabblänkar</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">Nya fordon</a></li>
+                    <li><a href="#" class="hover:text-white">Begagnade fordon</a></li>
+                    <li><a href="#" class="hover:text-white">Service & Verkstad</a></li>
+                    <li><a href="#" class="hover:text-white">Reservdelar</a></li>
+                    <li><a href="#" class="hover:text-white">Kontakta oss</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 border-b border-gray-600 pb-2">Öppettider</h4>
+                <p class="text-gray-400 text-sm mb-2"><strong class="text-gray-300">Mån - Fre:</strong> 07:00 - 17:00</p>
+                <p class="text-gray-400 text-sm mb-2"><strong class="text-gray-300">Lör - Sön:</strong> Stängt</p>
+
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-8 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Kihlströms Transport & Lastbilscenter. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
