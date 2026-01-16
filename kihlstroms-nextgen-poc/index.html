@@ -106,7 +106,7 @@
             `;
         }
 
-        function appendMessage(sender, text) {
+        function appendMessage(sender, text, agentName = 'AI AGENT', agentColor = 'text-blue-400') {
             const div = document.createElement('div');
             const isUser = sender === 'user';
 
@@ -116,7 +116,7 @@
 
             div.innerHTML = `
                 <div class="flex items-center gap-2 mb-2 ${isUser ? 'justify-end' : ''}">
-                    <span class="text-xs font-bold ${isUser ? 'text-green-400' : 'text-blue-400'} mono">${isUser ? 'YOU' : 'AI AGENT'}</span>
+                    <span class="text-xs font-bold ${isUser ? 'text-green-400' : agentColor} mono">${isUser ? 'YOU' : agentName}</span>
                 </div>
                 <p class="leading-relaxed whitespace-pre-wrap">${text}</p>
             `;
@@ -146,13 +146,16 @@
                 chatHistory.removeChild(loadingDiv);
 
                 const response = await agent.processMessage(text);
-                appendMessage('agent', response.text);
+
+                // Use the agent name/color returned from the orchestrator, or default
+                const name = response.agentName || 'AI AGENT';
+                // Handle Tailwind classes properly - if full class provided use it, otherwise assume it's a color utility
+                const color = response.agentColor || 'text-blue-400';
+
+                appendMessage('agent', response.text, name, color);
 
                 if (response.vehicles && response.vehicles.length > 0) {
                     inventoryGrid.innerHTML = response.vehicles.map(renderVehicle).join('');
-                } else if (response.vehicles && response.vehicles.length === 0) {
-                     // Keep existing inventory or show empty state if search explicitly failed
-                     // For now, we don't clear it unless we have results to show
                 }
             }, 800);
         }
