@@ -3,149 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isuzu D-Max XRX Stockholm | Kihlströms Transport</title>
-    <meta name="description" content="Köp eller leasa Isuzu D-Max XRX hos Kihlströms. 3.5t dragvikt, 4x4, låg skatt med CNG. Perfekt för bygg och entreprenad i Stockholm.">
-    <meta name="keywords" content="Isuzu D-Max XRX, Pickup Stockholm, Isuzu CNG skatt, Isuzu verkstad, Företagsleasing pickup">
+    <title>Isuzu D-Max XRX | Kihlströms Transport & Lastbilscenter</title>
+    <meta name="description" content="Köp Isuzu D-Max XRX hos Kihlströms. Sveriges mest sålda pickup. 3,5 ton dragvikt, CNG-tillval för låg skatt och 5 stjärnor i Euro NCAP.">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { font-family: 'Inter', sans-serif; }
-        .gradient-hero { background: linear-gradient(135deg, #b91c1c 0%, #7f1d1d 100%); }
-        .section-fade { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
-        .section-fade.visible { opacity: 1; transform: translateY(0); }
+        .isuzu-red { color: #E60012; }
+        .bg-isuzu-red { background-color: #E60012; }
+        .hero-bg { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.isuzusverige.se/media/dq1lpn1t/web_isuzu_3848_lastatungt.jpg'); background-size: cover; background-position: center; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
-    <!-- Navigation (Same as index) -->
+<body class="bg-white text-slate-900">
+    <!-- Nav -->
     <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="index.html" class="flex items-center space-x-3">
-                    <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center">
-                        <span class="text-white font-bold text-xl">K</span>
-                    </div>
-                    <div>
-                        <h1 class="text-lg font-bold text-slate-900 leading-tight">Kihlströms</h1>
-                        <p class="text-xs text-slate-500">Transport & Lastbilscenter</p>
-                    </div>
+                    <div class="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center text-white font-bold text-xl">K</div>
+                    <span class="font-bold text-lg">Kihlströms</span>
                 </a>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html#fordon" class="text-slate-600 hover:text-blue-600 font-medium transition">Fordon</a>
-                    <a href="iveco.html" class="text-slate-600 hover:text-blue-600 font-medium transition">Iveco</a>
-                    <a href="isuzu.html" class="text-blue-600 font-semibold transition">Isuzu</a>
-                    <a href="index.html#kontakt" class="bg-red-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-red-700 transition">Kontakta oss</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-600 hover:text-slate-900 font-medium">Hem</a>
+                    <a href="isuzu.html" class="text-red-600 font-bold">Isuzu</a>
+                    <a href="iveco.html" class="text-slate-600 hover:text-slate-900 font-medium">Iveco</a>
+                    <a href="index.html#kontakt" class="bg-slate-900 text-white px-5 py-2 rounded-lg font-medium hover:bg-slate-800 transition">Kontakta oss</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="gradient-hero min-h-[60vh] flex items-center pt-20 text-white">
+    <!-- Hero -->
+    <header class="hero-bg min-h-[60vh] flex items-center pt-20 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div class="max-w-3xl">
-                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-                    Isuzu D-Max XRX
-                </h1>
-                <p class="text-2xl text-red-100 mb-8 leading-relaxed">
-                    Pickupernas Konung. 3.5 ton dragvikt. Extrem framkomlighet.
+                <span class="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold tracking-wider mb-4 inline-block">SVERIGES MEST SÅLDA PICKUP</span>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Isuzu D-Max XRX</h1>
+                <p class="text-xl md:text-2xl text-slate-200 mb-8 font-light">
+                    Hårt arbete i blodet. Byggd för dig som drar tungt, lastar mycket och kräver personbilskomfort hela vägen.
                 </p>
-                <div class="flex flex-wrap gap-4">
-                    <div class="bg-white/10 backdrop-blur rounded-lg px-4 py-2">
-                        <span class="font-bold text-xl block">3 500 kg</span>
-                        <span class="text-sm text-red-100">Dragvikt</span>
-                    </div>
-                    <div class="bg-white/10 backdrop-blur rounded-lg px-4 py-2">
-                        <span class="font-bold text-xl block">1 000 kg</span>
-                        <span class="text-sm text-red-100">Lastvikt</span>
-                    </div>
-                    <div class="bg-white/10 backdrop-blur rounded-lg px-4 py-2">
-                        <span class="font-bold text-xl block">5 Stjärnor</span>
-                        <span class="text-sm text-red-100">Säkerhet (NCAP)</span>
-                    </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button onclick="document.getElementById('specs').scrollIntoView({behavior: 'smooth'})" class="bg-white text-slate-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition">
+                        Se specifikationer
+                    </button>
+                    <button onclick="window.location.href='index.html#kontakt'" class="bg-red-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-red-700 transition">
+                        Boka provkörning
+                    </button>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Content Section -->
-    <section class="py-20 bg-white">
+    <!-- Key Stats Grid -->
+    <section class="py-16 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16 items-start">
-                <div class="section-fade">
-                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Det Mobila Kontoret för Tuffa Tag</h2>
-                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                        Isuzu D-Max XRX är inte bara en arbetsbil; det är ett mobilt kontor med personbilskomfort. Utrustad med premiumläder, adaptiv farthållare och moderna förarstödssystem.
-                    </p>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4">Varför välja D-Max?</h3>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-start gap-3">
-                            <span class="text-green-500 font-bold text-xl">✓</span>
-                            <div>
-                                <strong class="block text-slate-900">Oslagbar Ekonomi (CNG)</strong>
-                                <span class="text-slate-600">Välj vår CNG-konvertering för att undvika hög malus-skatt. Låga driftskostnader för ditt företag.</span>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-green-500 font-bold text-xl">✓</span>
-                            <div>
-                                <strong class="block text-slate-900">Riktig 4WD</strong>
-                                <span class="text-slate-600">Inkopplingsbar fyrhjulsdrift med lågväxel och diffspärr. Tar sig fram där andra stannar.</span>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-green-500 font-bold text-xl">✓</span>
-                            <div>
-                                <strong class="block text-slate-900">Scenario: Entreprenad</strong>
-                                <span class="text-slate-600">Perfekt för att dra grävmaskiner (upp till 3.5t) och ta sig ut på leriga byggvägar.</span>
-                            </div>
-                        </li>
-                    </ul>
-                    <a href="index.html#kontakt" class="inline-block bg-slate-900 text-white px-8 py-4 rounded-xl font-semibold hover:bg-slate-800 transition">
-                        Begär offert på D-Max
-                    </a>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                    <p class="text-4xl font-bold text-red-600 mb-2">3,5 ton</p>
+                    <p class="text-slate-500 font-medium">Dragvikt</p>
                 </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                    <p class="text-4xl font-bold text-red-600 mb-2">1 000 kg</p>
+                    <p class="text-slate-500 font-medium">Lastvikt (ca)</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                    <p class="text-4xl font-bold text-red-600 mb-2">CNG</p>
+                    <p class="text-slate-500 font-medium">Låg årsskatt (Tillval)</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                    <p class="text-4xl font-bold text-red-600 mb-2">5/5</p>
+                    <p class="text-slate-500 font-medium">Euro NCAP Säkerhet</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Specs Card -->
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 section-fade">
-                    <h3 class="text-xl font-bold text-slate-900 mb-6">Teknisk Data - XRX Double Cab</h3>
+    <!-- Detailed Specs -->
+    <section id="specs" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6">Byggd för svenska förhållanden</h2>
+                    <div class="space-y-6 text-lg text-slate-600">
+                        <p>
+                            Isuzu D-Max är konstruerad med ett kraftigt rambyggt chassi med åtta tvärbalkar för maximal vridstyvhet. Detta gör att den klarar av att dra 3,5 ton dag efter dag utan att mattas.
+                        </p>
+                        <p>
+                            <strong>Vinteregenskaper:</strong> Med inkopplingsbar fyrhjulsdrift, lågväxel och diffspärr tar du dig fram oavsett om det är snöstorm i Norrland eller lervälling på byggarbetsplatsen.
+                        </p>
+                        <p>
+                            <strong>XRX - Premiumkomfort:</strong> Vår storsäljare XRX kombinerar råstyrka med lyx. Läderklädsel, eljusterbar förarstol, 9" touchskärm med Apple CarPlay/Android Auto och adaptiv farthållare ingår.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 grid grid-cols-1 gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">✓</div>
+                            <span class="font-medium">HVO100-godkänd (Minskar CO2 upp till 90%)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">✓</div>
+                            <span class="font-medium">3 år / 10 000 mil nybilsgaranti</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">✓</div>
+                            <span class="font-medium">Minst 1 306 kr årsskatt med CNG-konvertering</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-100 rounded-3xl p-8">
+                    <h3 class="text-2xl font-bold mb-6">Tekniska Data (Double Cab)</h3>
                     <div class="space-y-4">
-                        <div class="flex justify-between border-b pb-2">
-                            <span class="text-slate-600">Motor</span>
-                            <span class="font-medium">1.9L / 3.0L Turbodiesel</span>
+                        <div class="flex justify-between border-b border-slate-200 pb-2">
+                            <span class="text-slate-500">Motor</span>
+                            <span class="font-bold">1.9L Turbodiesel (163 hk / 360 Nm)</span>
                         </div>
-                        <div class="flex justify-between border-b pb-2">
-                            <span class="text-slate-600">Hästkrafter</span>
-                            <span class="font-medium">163 hk / 190 hk</span>
+                        <div class="flex justify-between border-b border-slate-200 pb-2">
+                            <span class="text-slate-500">Växellåda</span>
+                            <span class="font-bold">6-stegs Automat / Manuell</span>
                         </div>
-                        <div class="flex justify-between border-b pb-2">
-                            <span class="text-slate-600">Vridmoment</span>
-                            <span class="font-medium">360 Nm / 450 Nm</span>
+                        <div class="flex justify-between border-b border-slate-200 pb-2">
+                            <span class="text-slate-500">Drivning</span>
+                            <span class="font-bold">4WD (Hög/Låg) + Diffspärr</span>
                         </div>
-                        <div class="flex justify-between border-b pb-2">
-                            <span class="text-slate-600">Växellåda</span>
-                            <span class="font-medium">6-stegs Automat</span>
+                        <div class="flex justify-between border-b border-slate-200 pb-2">
+                            <span class="text-slate-500">Markfrigång</span>
+                            <span class="font-bold">240 mm</span>
                         </div>
-                        <div class="flex justify-between border-b pb-2">
-                            <span class="text-slate-600">Dragvikt</span>
-                            <span class="font-medium text-blue-600 font-bold">3 500 kg</span>
+                        <div class="flex justify-between border-b border-slate-200 pb-2">
+                            <span class="text-slate-500">Vadningsdjup</span>
+                            <span class="font-bold">800 mm</span>
                         </div>
-                         <div class="flex justify-between border-b pb-2">
-                            <span class="text-slate-600">Vadningsdjup</span>
-                            <span class="font-medium">800 mm</span>
+                        <div class="flex justify-between border-b border-slate-200 pb-2">
+                            <span class="text-slate-500">Flakmått (L x B)</span>
+                            <span class="font-bold">1571 x 1530 mm</span>
                         </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="index.html#kontakt" class="block w-full bg-red-600 text-white text-center py-4 rounded-xl font-bold hover:bg-red-700 transition">
+                            Begär offert nu
+                        </a>
+                        <p class="text-xs text-center text-slate-500 mt-2">Vi återkommer inom 24h</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        });
-        document.querySelectorAll('.section-fade').forEach(el => observer.observe(el));
-    </script>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold mb-4">Kihlströms Transport & Lastbilscenter</h3>
+            <p class="text-slate-400 mb-8">Auktoriserad återförsäljare av Isuzu & Iveco.</p>
+            <div class="flex justify-center gap-6 text-sm text-slate-500">
+                <a href="index.html" class="hover:text-white">Hem</a>
+                <a href="#" class="hover:text-white">Isuzu</a>
+                <a href="iveco.html" class="hover:text-white">Iveco</a>
+                <a href="index.html#kontakt" class="hover:text-white">Kontakt</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

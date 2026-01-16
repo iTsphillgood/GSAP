@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kihlströms NextGen Digital Showroom | POC</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #e2e8f0; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(148, 163, 184, 0.1); }
+        .agent-msg { background: #1e293b; border-left: 3px solid #3b82f6; }
+        .user-msg { background: #334155; border-right: 3px solid #10b981; margin-left: auto; }
+        .typing-dot { animation: typing 1.4s infinite ease-in-out both; }
+        @keyframes typing { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); } }
+    </style>
+</head>
+<body class="h-screen flex flex-col overflow-hidden">
+    <!-- Header -->
+    <header class="h-16 border-b border-slate-700 flex items-center px-6 justify-between bg-slate-900/80 backdrop-blur">
+        <div class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center font-bold text-white mono">K</div>
+            <h1 class="font-bold text-lg tracking-tight">Kihlströms <span class="text-blue-500 font-normal">NextGen</span></h1>
+            <span class="bg-blue-500/10 text-blue-400 text-xs px-2 py-0.5 rounded mono border border-blue-500/20">POC v0.1</span>
+        </div>
+        <div class="flex gap-6 text-sm text-slate-400">
+            <span class="hover:text-white cursor-pointer transition">Inventory API</span>
+            <span class="hover:text-white cursor-pointer transition">Agent Config</span>
+            <span class="hover:text-white cursor-pointer transition">Analytics</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex overflow-hidden">
+        <!-- Sidebar / Inventory List -->
+        <aside class="w-1/3 border-r border-slate-700 bg-slate-800/30 flex flex-col">
+            <div class="p-4 border-b border-slate-700 flex justify-between items-center">
+                <h2 class="font-bold text-slate-300">Live Inventory</h2>
+                <span class="text-xs mono text-green-400">● Connected</span>
+            </div>
+            <div id="inventory-grid" class="flex-1 overflow-y-auto p-4 space-y-4">
+                <!-- Vehicle Cards injected here -->
+                <div class="text-center text-slate-500 mt-10 mono text-sm">Waiting for agent query...</div>
+            </div>
+        </aside>
+
+        <!-- Chat Interface -->
+        <section class="flex-1 flex flex-col bg-slate-900 relative">
+            <!-- Chat History -->
+            <div id="chat-history" class="flex-1 overflow-y-auto p-6 space-y-6">
+                <!-- Initial Greeting -->
+                <div class="agent-msg p-4 rounded-r-lg rounded-bl-lg max-w-2xl shadow-lg">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-xs font-bold text-blue-400 mono">AI AGENT</span>
+                        <span class="text-xs text-slate-500">Just now</span>
+                    </div>
+                    <p class="leading-relaxed">System initialized. Connected to Kihlströms Vehicle Database [Stockholm Node].<br><br>Hello! I am your automated commerce assistant. I can help you find specific commercial vehicles based on technical requirements (payload, towing) or business needs (tax optimization, availability).<br><br>How can I assist your fleet today?</p>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="p-6 border-t border-slate-700 bg-slate-800/50">
+                <form id="chat-form" class="relative">
+                    <input type="text" id="user-input"
+                        class="w-full bg-slate-900 border border-slate-600 rounded-xl px-4 py-4 pr-12 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition shadow-inner mono text-sm"
+                        placeholder="Ask about vehicles, e.g. 'I need a pickup for forestry work' or 'Show ready-to-deliver vans'..."
+                        autocomplete="off">
+                    <button type="submit" class="absolute right-3 top-3 p-1.5 bg-blue-600 hover:bg-blue-500 rounded-lg text-white transition">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script type="module">
+        import agent from './agent.js';
+
+        const chatHistory = document.getElementById('chat-history');
+        const chatForm = document.getElementById('chat-form');
+        const userInput = document.getElementById('user-input');
+        const inventoryGrid = document.getElementById('inventory-grid');
+
+        // Initial agent state
+        agent.processMessage("init");
+
+        function renderVehicle(vehicle) {
+            return `
+                <div class="glass-panel p-4 rounded-xl hover:bg-slate-800/50 transition cursor-pointer group">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold text-blue-400 mono">${vehicle.id}</span>
+                        <span class="text-xs px-2 py-0.5 rounded bg-green-500/10 text-green-400 border border-green-500/20 mono">${vehicle.stock_status}</span>
+                    </div>
+                    <h3 class="font-bold text-white mb-1 group-hover:text-blue-400 transition">${vehicle.model}</h3>
+                    <div class="grid grid-cols-2 gap-y-1 gap-x-4 text-xs text-slate-400 mono mb-3">
+                        <span>Payload: ${vehicle.payload}kg</span>
+                        <span>Tow: ${vehicle.towing}kg</span>
+                        <span>Fuel: ${vehicle.fuel}</span>
+                        <span>Price: ${vehicle.price}</span>
+                    </div>
+                    <div class="flex flex-wrap gap-1">
+                        ${vehicle.features.map(f => `<span class="px-1.5 py-0.5 bg-slate-700 rounded text-[10px] text-slate-300">${f}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        function appendMessage(sender, text) {
+            const div = document.createElement('div');
+            const isUser = sender === 'user';
+
+            div.className = isUser
+                ? 'user-msg p-4 rounded-l-lg rounded-br-lg max-w-2xl shadow-lg'
+                : 'agent-msg p-4 rounded-r-lg rounded-bl-lg max-w-2xl shadow-lg';
+
+            div.innerHTML = `
+                <div class="flex items-center gap-2 mb-2 ${isUser ? 'justify-end' : ''}">
+                    <span class="text-xs font-bold ${isUser ? 'text-green-400' : 'text-blue-400'} mono">${isUser ? 'YOU' : 'AI AGENT'}</span>
+                </div>
+                <p class="leading-relaxed whitespace-pre-wrap">${text}</p>
+            `;
+
+            chatHistory.appendChild(div);
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        }
+
+        async function handleSubmit(e) {
+            e.preventDefault();
+            const text = userInput.value.trim();
+            if (!text) return;
+
+            // User message
+            appendMessage('user', text);
+            userInput.value = '';
+
+            // Loading indicator
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'agent-msg p-4 rounded-r-lg rounded-bl-lg w-24 shadow-lg';
+            loadingDiv.innerHTML = `<div class="flex gap-1 justify-center"><div class="w-2 h-2 bg-blue-400 rounded-full typing-dot"></div><div class="w-2 h-2 bg-blue-400 rounded-full typing-dot" style="animation-delay: 0.2s"></div><div class="w-2 h-2 bg-blue-400 rounded-full typing-dot" style="animation-delay: 0.4s"></div></div>`;
+            chatHistory.appendChild(loadingDiv);
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+
+            // Artificial delay
+            setTimeout(async () => {
+                chatHistory.removeChild(loadingDiv);
+
+                const response = await agent.processMessage(text);
+                appendMessage('agent', response.text);
+
+                if (response.vehicles && response.vehicles.length > 0) {
+                    inventoryGrid.innerHTML = response.vehicles.map(renderVehicle).join('');
+                } else if (response.vehicles && response.vehicles.length === 0) {
+                     // Keep existing inventory or show empty state if search explicitly failed
+                     // For now, we don't clear it unless we have results to show
+                }
+            }, 800);
+        }
+
+        chatForm.addEventListener('submit', handleSubmit);
+    </script>
+</body>
+</html>
