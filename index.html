@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kihlströms Transport & Lastbilscenter | Isuzu & Iveco Stockholm</title>
+    <meta name="description" content="Kihlströms erbjuder Isuzu D-Max XRX och Iveco Daily transportbilar för svenska företag. Auktoriserad återförsäljare med 50+ års erfarenhet. Finansiering, service och anpassningar. Kontakta oss idag!">
+    <meta name="keywords" content="Isuzu D-Max XRX leasing företag, Iveco Daily lastvikt B-kort, Transportbil med bakgavellyft lagerbil, Låg skatt pickup Sverige (CNG), Iveco verkstad Stockholm, Kihlströms Transport">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.kihlstroms.se/v3">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-hero { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%); }
+        .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+        .vehicle-card { background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); }
+        .stat-glow { box-shadow: 0 0 40px rgba(59, 130, 246, 0.15); }
+        .btn-primary { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); transition: all 0.3s ease; }
+        .btn-primary:hover { background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%); transform: scale(1.02); }
+        .section-fade { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+        .section-fade.visible { opacity: 1; transform: translateY(0); }
+        .accent-line { background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%); }
+        .vehicle-img { background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%); }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutoDealer",
+        "name": "Kihlströms Transport & Lastbilscenter",
+        "description": "Auktoriserad återförsäljare av Isuzu och Iveco transportfordon för företag i Sverige",
+        "url": "https://www.kihlstroms.se",
+        "telephone": "+46-8-XXX-XXXX",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Smista Allé 19",
+            "postalCode": "14172",
+            "addressLocality": "Segeltorp",
+            "addressCountry": "SE"
+        },
+        "brand": ["Isuzu", "Iveco"],
+        "priceRange": "$$$$"
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">K</span>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold text-slate-900 leading-tight">Kihlströms</h1>
+                        <p class="text-xs text-slate-500">Transport & Lastbilscenter</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#fordon" class="text-slate-600 hover:text-blue-600 font-medium transition">Fordon</a>
+                    <a href="#scenarion" class="text-slate-600 hover:text-blue-600 font-medium transition">B2B-Case</a>
+                    <a href="#marknad" class="text-slate-600 hover:text-blue-600 font-medium transition">Insikter</a>
+                    <a href="#kontakt" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold shadow-lg">Kontakta oss</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#fordon" class="block py-2 text-slate-600">Fordon</a>
+                <a href="#scenarion" class="block py-2 text-slate-600">B2B-Case</a>
+                <a href="#marknad" class="block py-2 text-slate-600">Marknadsinsikter</a>
+                <a href="#kontakt" class="block py-3 bg-blue-600 text-white text-center rounded-xl font-semibold">Kontakta oss</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-hero min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <div class="inline-flex items-center bg-white/10 backdrop-blur rounded-full px-4 py-2 mb-6">
+                        <span class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
+                        <span class="text-sm font-medium">Auktoriserad Isuzu & Iveco Partner i Stockholm</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        Din Auktoriserade Partner för <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Isuzu & Iveco</span> i Stockholm
+                    </h2>
+                    <p class="text-xl text-slate-300 mb-8 leading-relaxed">
+                        Specialiserade på Isuzu D-Max, Iveco Daily Skåp och Fastlane-lösningar för svenska företag. Snabb leverans, maximerad lastvikt och marknadens bästa service.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#fordon" class="btn-primary text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl text-center">
+                            Utforska våra fordon
+                        </a>
+                        <a href="#kontakt" class="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition text-center">
+                            Boka demo
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="vehicle-img rounded-3xl h-80 lg:h-[500px] flex items-center justify-center overflow-hidden">
+                        <!-- Placeholder for Hero Image -->
+                        <div class="text-center p-8">
+                            <svg class="w-32 h-32 mx-auto text-slate-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 17h8M8 17v-4m8 4v-4m-8 0V9a4 4 0 014-4h0a4 4 0 014 4v4m-8 0h8m-10 4h12a2 2 0 002-2V9a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"/>
+                            </svg>
+                            <p class="text-slate-500 font-medium">Isuzu D-Max & Iveco Daily</p>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-2xl stat-glow">
+                        <p class="text-3xl font-bold text-blue-600">50+</p>
+                        <p class="text-sm text-slate-500">År i branschen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center section-fade">
+                <h3 class="text-3xl font-bold text-slate-900 mb-6">Varför välja Kihlströms?</h3>
+                <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                    På Kihlströms Transport & Lastbilscenter förstår vi att din transportbil är ditt viktigaste verktyg. Som auktoriserad återförsäljare (Autocar Reseller) erbjuder vi helhetslösningar för hantverkare, åkerier och entreprenörer i Stockholm (Smista & Spånga).
+                </p>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    Vi kombinerar snabb tillgänglighet med verkstadsexpertis för att minimera stillestånd. Oavsett om du behöver en robust pickup eller en rymlig skåpbil, har vi rätt fordon för din verksamhet.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Insights Section -->
+    <section id="marknad" class="bg-slate-50 py-16 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div class="text-center mb-12 section-fade">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Marknadstrender & Insikter 2025/2026</h2>
+                <p class="text-lg text-slate-600 max-w-3xl mx-auto">Strategiska val för din fordonsflotta.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition section-fade">
+                    <div class="text-4xl mb-4">📉</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Låg Skatt & Malus</h3>
+                    <p class="text-slate-600">Svenska företag letar aktivt efter CNG (Biogas) eller HVO100-kompatibla fordon för att undvika hög malus-skatt. Isuzu D-Max CNG och Iveco Daily Biogas är våra "Hero-produkter".</p>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition section-fade">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">"Fastlane" – Ready-to-run</h3>
+                    <p class="text-slate-600">Väntetider på 12 månader är inte acceptabelt. Vårt koncept "Fastlane" innebär lagerbilar med färdigmonterade skåp och bakgavellyft för omgående leverans.</p>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition section-fade">
+                    <div class="text-4xl mb-4">⚖️</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Lastvikt på B-kort</h3>
+                    <p class="text-slate-600">Många lätta lastbilar "äter upp" lastvikten. Vi optimerar våra byggnationer för att ge dig ca 1 000 kg verklig lastvikt på B-körkort – avgörande för din produktivitet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicles Section -->
+    <section id="fordon" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-fade">
+                <div class="h-1 w-20 accent-line rounded mx-auto mb-6"></div>
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Fordon i Fokus</h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">Premium & Prestanda för svenska förhållanden.</p>
+            </div>
+
+            <!-- Vehicle 1: Isuzu D-Max XRX -->
+            <div class="vehicle-card rounded-3xl shadow-xl overflow-hidden mb-12 card-hover section-fade border border-slate-100">
+                <div class="grid lg:grid-cols-2">
+                    <div class="vehicle-img h-64 lg:h-auto flex items-center justify-center p-12">
+                         <div class="text-center">
+                            <svg class="w-40 h-40 mx-auto text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
+                            </svg>
+                            <p class="text-slate-500 mt-4 font-medium">Isuzu D-Max XRX</p>
+                        </div>
+                    </div>
+                    <div class="p-8 lg:p-12">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">Pickup</span>
+                            <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">4x4</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-slate-900 mb-4">Isuzu D-Max XRX – Pickupernas Konung</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Den ultimata firmabilen för dig som kräver både komfort och extrem framkomlighet. Det är inte bara en arbetsbil; det är ett mobilt kontor med personbilskomfort.</p>
+
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                <p class="text-2xl font-bold text-blue-600">3 500 kg</p>
+                                <p class="text-sm text-slate-500">Dragvikt (Klassledande)</p>
+                            </div>
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                <p class="text-2xl font-bold text-blue-600">~1 000 kg</p>
+                                <p class="text-sm text-slate-500">Lastvikt på flak</p>
+                            </div>
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                <p class="text-2xl font-bold text-blue-600">4WD</p>
+                                <p class="text-sm text-slate-500">Diffspärr & Lågväxel</p>
+                            </div>
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                <p class="text-2xl font-bold text-blue-600">Låg Skatt</p>
+                                <p class="text-sm text-slate-500">CNG-konvertering möjlig</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button onclick="openModal('dmax')" class="btn-primary text-white px-8 py-4 rounded-xl font-semibold w-full sm:w-auto text-center">
+                                Begär offert för D-Max
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle 2: Iveco Daily Van 12m3 -->
+            <div class="vehicle-card rounded-3xl shadow-xl overflow-hidden mb-12 card-hover section-fade border border-slate-100">
+                <div class="grid lg:grid-cols-2">
+                    <div class="vehicle-img h-64 lg:h-auto flex items-center justify-center p-12 lg:order-2">
+                        <div class="text-center">
+                            <svg class="w-40 h-40 mx-auto text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 17h8M8 17v-4m8 4v-4m-8 0V7a2 2 0 012-2h4a2 2 0 012 2v6m-8 0h8m-10 4h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                            </svg>
+                            <p class="text-slate-500 mt-4 font-medium">Iveco Daily Van 12m³</p>
+                        </div>
+                    </div>
+                    <div class="p-8 lg:p-12 lg:order-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full">Skåpbil</span>
+                            <span class="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">12m³</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-slate-900 mb-4">Iveco Daily Van 12m³ – Smidigast i Stan</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Maximal volym med personbilskänsla för effektiv stadsdistribution. Marknadens snävaste vändradie – avgörande för leveranser i Stockholms innerstad.</p>
+
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                <p class="text-2xl font-bold text-orange-600">~1 000 kg</p>
+                                <p class="text-sm text-slate-500">Nyttolast (B-kort)</p>
+                            </div>
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                <p class="text-2xl font-bold text-orange-600">12 m³</p>
+                                <p class="text-sm text-slate-500">Lastvolym</p>
+                            </div>
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                <p class="text-2xl font-bold text-orange-600">Hi-Matic</p>
+                                <p class="text-sm text-slate-500">8-stegs Automat</p>
+                            </div>
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                <p class="text-2xl font-bold text-orange-600">B-Kort</p>
+                                <p class="text-sm text-slate-500">Optimerad vikt</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button onclick="openModal('daily12')" class="btn-primary text-white px-8 py-4 rounded-xl font-semibold w-full sm:w-auto text-center">
+                                Begär offert för Daily
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle 3: Iveco Daily Fastlane -->
+            <div class="vehicle-card rounded-3xl shadow-xl overflow-hidden card-hover section-fade border border-slate-100">
+                <div class="grid lg:grid-cols-2">
+                    <div class="vehicle-img h-64 lg:h-auto flex items-center justify-center p-12">
+                        <div class="text-center">
+                            <svg class="w-40 h-40 mx-auto text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0zM13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10m10 0H3m10 0a1 1 0 001 1h5.5M17 16V8a1 1 0 011-1h1.586a1 1 0 01.707.293l2.414 2.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-.5"/>
+                            </svg>
+                            <p class="text-slate-500 mt-4 font-medium">Iveco Daily Fastlane</p>
+                        </div>
+                    </div>
+                    <div class="p-8 lg:p-12">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-cyan-100 text-cyan-700 text-xs font-semibold px-3 py-1 rounded-full">Chassi + Skåp</span>
+                            <span class="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">Bakgavellyft</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-slate-900 mb-4">Iveco Daily Fastlane – Chassi med Skåp & Bakgavellyft</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Nyckelfärdig lätt lastbil för omgående leverans. Inga väntetider på påbyggare. Färdigbyggt volymskåp med 750 kg Zepro bakgavellyft.</p>
+
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                <p class="text-2xl font-bold text-cyan-600">~1 000 kg</p>
+                                <p class="text-sm text-slate-500">Lastvikt (B-kort)</p>
+                            </div>
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                <p class="text-2xl font-bold text-cyan-600">750 kg</p>
+                                <p class="text-sm text-slate-500">Lyftkapacitet (Zepro)</p>
+                            </div>
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                <p class="text-2xl font-bold text-cyan-600">Lagerbil</p>
+                                <p class="text-sm text-slate-500">Omgående leverans</p>
+                            </div>
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                                <p class="text-2xl font-bold text-cyan-600">Hi-Matic</p>
+                                <p class="text-sm text-slate-500">Luftfjädrad stol</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button onclick="openModal('fastlane')" class="btn-primary text-white px-8 py-4 rounded-xl font-semibold w-full sm:w-auto text-center">
+                                Begär offert för Fastlane
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Case Scenarios -->
+    <section id="scenarion" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-fade">
+                <div class="h-1 w-20 accent-line rounded mx-auto mb-6"></div>
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Användningsområden (Use Cases)</h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">Rätt fordon för rätt uppdrag.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Scenario A -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition section-fade">
+                    <div class="text-4xl mb-4">🌲</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Entreprenad & Skogsbruk</h3>
+                    <p class="text-sm font-semibold text-blue-600 mb-2">Målgrupp: Skogsägare, Anläggning</p>
+                    <p class="text-slate-600 mb-4">Måste kunna dra en grävmaskin på släp (3,5t) och ta sig ut på leriga skogsvägar.</p>
+                    <hr class="border-slate-100 my-4">
+                    <p class="font-medium text-slate-900">Lösning: <span class="text-blue-600">Isuzu D-Max XRX</span></p>
+                    <p class="text-sm text-slate-500 mt-2">Robust ram som tål stryk, 4WD och premiumkomfort.</p>
+                </div>
+
+                <!-- Scenario B -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition section-fade">
+                    <div class="text-4xl mb-4">📦</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Bud & Last-Mile</h3>
+                    <p class="text-sm font-semibold text-blue-600 mb-2">Målgrupp: Budfirmor, E-handel</p>
+                    <p class="text-slate-600 mb-4">Många stopp per dag, trånga gator och höga krav på ergonomi.</p>
+                    <hr class="border-slate-100 my-4">
+                    <p class="font-medium text-slate-900">Lösning: <span class="text-blue-600">Iveco Daily Van</span></p>
+                    <p class="text-sm text-slate-500 mt-2">Hi-Matic sparar knän och snäv vändradie sparar tid.</p>
+                </div>
+
+                <!-- Scenario C -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition section-fade">
+                    <div class="text-4xl mb-4">🏠</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Flytt & Distribution</h3>
+                    <p class="text-sm font-semibold text-blue-600 mb-2">Målgrupp: Flyttfirmor, Catering</p>
+                    <p class="text-slate-600 mb-4">Plant golv, enkel lastning av pallar, B-körkortskrav.</p>
+                    <hr class="border-slate-100 my-4">
+                    <p class="font-medium text-slate-900">Lösning: <span class="text-blue-600">Iveco Fastlane</span></p>
+                    <p class="text-sm text-slate-500 mt-2">Bakgavellyft (Zepro) och ingen väntan på påbyggnad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-slate-900 text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center section-fade">
+            <h2 class="text-3xl font-bold mb-6">Redo att uppgradera vagnparken?</h2>
+            <p class="text-xl text-slate-300 mb-8">Kontakta våra företagssäljare idag för en offert eller provkörning. Vi erbjuder flexibel företagsleasing och snabba leveranser.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#kontakt" class="btn-primary text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl">
+                    Kontakta oss
+                </a>
+                <a href="tel:+468XXXXXXXX" class="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition">
+                    Ring säljare
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="section-fade">
+                    <div class="h-1 w-20 accent-line rounded mb-6"></div>
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6">Kontakta oss</h2>
+                    <p class="text-xl text-slate-600 mb-8">Våra B2B-specialister hjälper er att hitta rätt fordonslösning för er verksamhet.</p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900">Kihlströms Stockholm Syd</h4>
+                                <p class="text-slate-600">Smista Allé 19, 14172 Segeltorp</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900">Kihlströms Stockholm Norr</h4>
+                                <p class="text-slate-600">Spånga</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-fade">
+                    <form id="contactForm" class="bg-slate-50 rounded-3xl p-8 shadow-xl">
+                        <div class="grid gap-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 mb-2">Företagsnamn *</label>
+                                    <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 mb-2">Org.nummer</label>
+                                    <input type="text" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 mb-2">Kontaktperson *</label>
+                                    <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 mb-2">Telefon *</label>
+                                    <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">E-post *</label>
+                                <input type="email" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Intresserad av</label>
+                                <select class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+                                    <option value="">Välj fordon...</option>
+                                    <option value="dmax">Isuzu D-Max XRX</option>
+                                    <option value="daily12">Iveco Daily Van 12m³</option>
+                                    <option value="fastlane">Iveco Daily Fastlane (Chassi, Skåp, Lyft)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Meddelande</label>
+                                <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" placeholder="Beskriv era behov och önskemål..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary text-white px-8 py-4 rounded-xl font-semibold text-lg w-full">
+                                Skicka förfrågan
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">K</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold leading-tight">Kihlströms</h3>
+                            <p class="text-xs text-slate-400">Transport & Lastbilscenter</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-400">Auktoriserad återförsäljare av Isuzu och Iveco. Grundat 1972.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Fordon</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="#" class="hover:text-white transition">Isuzu D-Max XRX</a></li>
+                        <li><a href="#" class="hover:text-white transition">Iveco Daily Van</a></li>
+                        <li><a href="#" class="hover:text-white transition">Iveco Fastlane</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Kontakt</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li>Smista Allé 19, Segeltorp</li>
+                        <li>Spånga (Norr)</li>
+                        <li>info@kihlstroms.se</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="modalTitle" class="text-2xl font-bold text-slate-900">Begär offert</h3>
+                    <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Företagsnamn *" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500">
+                    <input type="text" placeholder="Kontaktperson *" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500">
+                    <input type="email" placeholder="E-post *" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500">
+                    <input type="tel" placeholder="Telefon *" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500">
+                    <textarea placeholder="Beskriv era behov..." rows="3" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500"></textarea>
+                    <button type="submit" class="btn-primary text-white px-8 py-4 rounded-xl font-semibold w-full">
+                        Skicka offertförfrågan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Modal functions
+        const vehicleNames = {
+            'dmax': 'Isuzu D-Max XRX',
+            'daily12': 'Iveco Daily Van 12m³',
+            'fastlane': 'Iveco Daily Fastlane'
+        };
+
+        function openModal(vehicle) {
+            const modal = document.getElementById('quoteModal');
+            const title = document.getElementById('modalTitle');
+            title.textContent = `Offert: ${vehicleNames[vehicle]}`;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('quoteModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on backdrop click
+        document.getElementById('quoteModal').addEventListener('click', (e) => {
+            if (e.target.id === 'quoteModal') {
+                closeModal();
+            }
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Tack för din förfrågan! Vi återkommer inom 24 timmar.');
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section-fade').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>

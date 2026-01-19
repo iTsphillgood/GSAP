@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iveco Daily & Fastlane | Kihlströms Transport & Lastbilscenter</title>
+    <meta name="description" content="Köp Iveco Daily hos Kihlströms. Välj mellan skåpbil 12m3 eller Fastlane (Chassi + Skåp + Lift) för omgående leverans. Upp till 1000kg lastvikt på B-körkort.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .hero-bg { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://ucp.dev/assets/order.png'); background-size: cover; background-position: center; }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+    <!-- Nav -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center text-white font-bold text-xl">K</div>
+                    <span class="font-bold text-lg">Kihlströms</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-600 hover:text-slate-900 font-medium">Hem</a>
+                    <a href="isuzu.html" class="text-slate-600 hover:text-slate-900 font-medium">Isuzu</a>
+                    <a href="iveco.html" class="text-blue-600 font-bold">Iveco</a>
+                    <a href="index.html#kontakt" class="bg-slate-900 text-white px-5 py-2 rounded-lg font-medium hover:bg-slate-800 transition">Kontakta oss</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero-bg min-h-[60vh] flex items-center pt-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="max-w-3xl">
+                <div class="flex gap-2 mb-4">
+                    <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-bold tracking-wider inline-block">MÖJLIGHETERNAS TRANSPORTBIL</span>
+                    <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold tracking-wider inline-block">MILJÖZON 3 REDO (BIOGAS)</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Iveco Daily</h1>
+                <p class="text-xl md:text-2xl text-slate-200 mb-8 font-light">
+                    Future-proof your fleet. Choose <strong>Daily Biogas</strong> for full access to Stockholm City (Miljözon 3) and significantly lower TCO. Up to 19m³ volume.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button onclick="document.getElementById('models').scrollIntoView({behavior: 'smooth'})" class="bg-white text-slate-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition">
+                        Utforska modeller
+                    </button>
+                    <button onclick="window.location.href='index.html#kontakt'" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition">
+                        Få offert direkt
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Models Section -->
+    <section id="models" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Två vinnare för din verksamhet</h2>
+                <p class="text-xl text-slate-600">Oavsett om du kör paket i innerstan eller tunga möbler.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Daily Van -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="bg-slate-200 h-64 flex items-center justify-center">
+                        <span class="text-6xl">🚐</span> <!-- Placeholder for Van Image -->
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-slate-900">Daily Van 12m³</h3>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">STADSFAVORITEN</span>
+                        </div>
+                        <p class="text-slate-600 mb-6">
+                            Marknadens smidigaste skåpbil med oslagbar vändradie. Perfekt för trånga stadsmiljöer utan att kompromissa med lastvolymen.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="text-blue-500 font-bold">✓</span> Lastvolym: 12 m³ (Plats för ståhöjd)
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-blue-500 font-bold">✓</span> Lastvikt: Upp till 1 430 kg
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-blue-500 font-bold">✓</span> Växellåda: Hi-Matic 8-stegs automat
+                            </li>
+                        </ul>
+                        <button onclick="window.location.href='index.html#kontakt'" class="w-full border-2 border-blue-600 text-blue-600 py-3 rounded-xl font-bold hover:bg-blue-50 transition">
+                            Jag är intresserad av Skåp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Fastlane -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border-2 border-blue-500 relative">
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md animate-pulse">
+                        LEVERANSKLAR
+                    </div>
+                    <div class="bg-slate-200 h-64 flex items-center justify-center">
+                        <span class="text-6xl">🚚</span> <!-- Placeholder for Fastlane Image -->
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-slate-900">Daily Fastlane</h3>
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">CHASSI + SKÅP + LIFT</span>
+                        </div>
+                        <p class="text-slate-600 mb-6">
+                            Nyckelfärdig lösning där du slipper vänta på påbyggnation. Komplett med volymskåp och bakgavellyft direkt från fabrik.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="text-blue-500 font-bold">✓</span> Skåpvolym: 18-22 m³
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-blue-500 font-bold">✓</span> Bakgavellyft: 750 kg Zepro
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-blue-500 font-bold">✓</span> Optimering: Maximerad lastvikt på B-kort
+                            </li>
+                        </ul>
+                        <button onclick="window.location.href='index.html#kontakt'" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition">
+                            Jag vill ha Fastlane nu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Daily Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6">Därför väljer proffsen Daily</h2>
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Unik Ramkonstruktion</h4>
+                            <p class="text-slate-600">Till skillnad från andra skåpbilar är Daily byggd på en separat stegram av stål (C-profil). Detta ger överlägsen hållbarhet och möjliggör tunga påbyggnationer.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Hi-Matic Växellåda</h4>
+                            <p class="text-slate-600">Klassens första 8-stegade automatlåda. Växlar på 200 millisekunder för en mjuk körning som sparar bränsle och skonar drivlinan i stadstrafik.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Totalekonomi (TCO)</h4>
+                            <p class="text-slate-600">Med långa serviceintervaller och robusta komponenter minimerar du stillestånd. Biogas-motorer finns tillgängliga för kraftigt reducerad fordonsskatt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 bg-slate-100 rounded-3xl p-12 flex items-center justify-center">
+                    <!-- Tech/Interior visual placeholder -->
+                    <div class="text-center">
+                        <p class="text-8xl mb-4">⚙️</p>
+                        <p class="font-bold text-slate-500">Byggd som en lastbil,<br>körs som en personbil.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold mb-4">Kihlströms Transport & Lastbilscenter</h3>
+            <p class="text-slate-400 mb-8">Auktoriserad återförsäljare av Isuzu & Iveco.</p>
+            <div class="flex justify-center gap-6 text-sm text-slate-500">
+                <a href="index.html" class="hover:text-white">Hem</a>
+                <a href="isuzu.html" class="hover:text-white">Isuzu</a>
+                <a href="#" class="hover:text-white">Iveco</a>
+                <a href="index.html#kontakt" class="hover:text-white">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
